@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie i Płatność</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Logowanie i płatność</h1>
+        <img src="kotek1.jpg" alt="Cute cat" class="cat-image">
+    </header>
+    <main>
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Hasło e-mail:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="cardNumber">Numer karty:</label>
+                <input type="text" id="cardNumber" name="cardNumber" required pattern="[0-9]{16}" title="Numer karty musi składać się z 16 cyfr.">
+            </div>
+            <div class="form-group">
+                <label for="pin">PIN karty:</label>
+                <input type="number" id="pin" name="pin" required>
+            </div>
+            <button type="submit" class="button">Zapłać</button>
+            <p class="security-info">Twoje dane są chronione.</p>
+        </form>
+    </main>
+    <script src="js/validation.js"></script>
+</body>
+</html> 
